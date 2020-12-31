@@ -1,0 +1,14 @@
+.DS_Store
+*.backup
+*.diff
+*.orig
+*.patch
+*.sw*
+*.map
+composer.lock
+package.lock
+yarn.lock
+dist/
+node_modules/
+vendor/
+.idea

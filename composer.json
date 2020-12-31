@@ -1,0 +1,43 @@
+{
+    "name": "cxl/common-lib",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Leho Kraav",
+            "email": "leho@conversionxl.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/conversionxl/phpcs-ruleset"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/conversionxl/hybrid-core"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/saas786/hybrid-support"
+        }
+    ],
+    "require": {
+        "php" : ">=5.6",
+        "justintadlock/hybrid-core": "dev-syed/tweak/shared/lib#2fd4ec0 as 5.0.0",
+        "justintadlock/hybrid-support": "dev-main#5d07b82"
+    },
+    "require-dev": {
+        "cxl/phpcs-ruleset": "dev-master",
+        "vimeo/psalm": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "CXL\\CommonLib\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
