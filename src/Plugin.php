@@ -96,7 +96,7 @@ final class Plugin {
 	 * Init
 	 */
 	public function init(): void {
-		$this->hybrid_core = new \Hybrid\Core\Application();
+		// $this->hybrid_core = new \Hybrid\Core\Application();
 	}
 
 	/**
