@@ -1,0 +1,3 @@
+publish/js/**/*.js
+bin-dev/fix-husky.js
+webpack.mix.export.js

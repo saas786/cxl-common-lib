@@ -1,0 +1,3 @@
+{
+  "extends": "./node_modules/@conversionxl/lint-staged-config/.stylelintrc"
+}

@@ -5,10 +5,10 @@
 *.patch
 *.sw*
 *.map
-composer.lock
-package.lock
-yarn.lock
 dist/
 node_modules/
 vendor/
 .idea
+resources/lang
+cxl-common-lib
+cxl-common-lib.zip
