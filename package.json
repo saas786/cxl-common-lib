@@ -8,7 +8,7 @@
     "husky-fix": "node \"./bin-dev/fix-husky.js\"",
     "i18n": "npm run i18n:textdomain && npm run i18n:pot",
     "i18n:textdomain": "npx wpi18n addtextdomain --exclude=vendor,node_modules,bin-dev",
-    "i18n:pot": "npx wpi18n makepot --domain-path=/resources/lang",
+    "i18n:pot": "npx wpi18n makepot --domain-path=/public/lang",
     "export": "npx mix --mix-config=webpack.mix.export.js --production",
     "build": "npm run i18n && npm run export",
     "pre-build": "composer update --prefer-dist --no-dev -o",

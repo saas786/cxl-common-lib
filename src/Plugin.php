@@ -14,8 +14,6 @@ defined( 'ABSPATH' ) || exit;
 
 /**
  * Main class
- *
- * @psalm-suppress UndefinedTrait
  */
 final class Plugin {
 
@@ -41,25 +39,11 @@ final class Plugin {
 	public $slug;
 
 	/**
-	 * View (templates) engine.
-	 *
-	 * @var Engine
-	 */
-	private $view;
-
-	/**
 	 * Singleton pattern
 	 *
 	 * @var null|Plugin
 	 */
 	private static $instance;
-
-	/**
-	 * Hybrid Core Application instance / object.
-	 *
-	 * @var \Hybrid\Core\Application
-	 */
-	public $hybrid_core;
 
 	/**
 	 * Clone
@@ -83,32 +67,46 @@ final class Plugin {
 		$this->plugin_dir_url  = plugin_dir_url( __FILE__ );
 		$this->slug            = basename( $this->plugin_dir_path );
 
+		// Load translations.
+		add_action( 'plugins_loaded', [ $this, 'loadTextdomain' ], 1 );
+
 		// Run.
 		add_action( 'plugins_loaded', [ $this, 'init' ], 1 );
 
 		if ( is_admin() ) {
-			$this->init_admin();
+			$this->initAdmin();
 		}
-
 	}
 
 	/**
-	 * Init
+	 * Load the plugin textdomain.
+	 *
+	 * @since  2021.01.28
+	 * @access public
+	 * @return void
 	 */
-	public function init(): void {
-		// $this->hybrid_core = new \Hybrid\Core\Application();
+	public function loadTextdomain(): void {
+
+		load_plugin_textdomain(
+			'cxl-common-lib',
+			false,
+			trailingslashit( dirname( plugin_basename( CXL_COMMON_LIB_PLUGIN_FILE ) ) ) . '/public/lang'
+		);
 	}
+
+	/**
+	 * @inheritDoc
+	 *
+	 * @since 2021.01.01
+	 */
+	public function init(): void {}
 
 	/**
 	 * Only `wp-admin`.
 	 *
-	 * @SuppressWarnings(PHPMD.ExitExpression)
-	 * @see https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1205
-	 * @since 2018.08.27
+	 * @since 2021.01.01
 	 */
-	private function init_admin(): void {
-
-	}
+	private function initAdmin(): void {}
 
 	/**
 	 * General exception logger.
@@ -120,7 +118,7 @@ final class Plugin {
 	 * @throws Exception
 	 * @todo Sentry, not `error_log()`.
 	 */
-	public function log_exception( Exception $e, $data = [] ): bool {
+	public function logException( Exception $e, $data = [] ): bool {
 
 		/**
 		 * AS has built-in failure logger, avoid hijack.
@@ -139,7 +137,7 @@ final class Plugin {
 	/**
 	 * Singleton pattern.
 	 */
-	public static function get_instance(): Plugin {
+	public static function getInstance(): Plugin {
 
 		if ( ! self::$instance ) {
 			/** @var Plugin $instance */
@@ -147,7 +145,6 @@ final class Plugin {
 		}
 
 		return self::$instance;
-
 	}
 
 }

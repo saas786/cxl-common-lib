@@ -4,12 +4,17 @@
  *
  * @package ConversionXL
  *
- * Plugin Name: CXL Common Lib
- * Plugin URI: https://cxl.com/
- * Description: Functionality, integrations, features.
- * Author: Leho Kraav
- * Author URI: https://cxl.com
- * Version: 2021.01.01
+ * Plugin Name:       CXL Common Lib
+ * Plugin URI:        https://cxl.com/
+ * Description:       Functionality, integrations, features.
+ * Author:            Leho Kraav
+ * Author URI:        https://cxl.com
+ * Version:           2021.01.01
+ *
+ * Requires at least: 5.6
+ * Requires PHP:      7.4
+ * Text Domain:       cxl-common-lib
+ * Domain Path:       /public/lang
  */
 
 use CXL\CommonLib\Plugin;
@@ -43,7 +48,7 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 function cxl_common_lib() {
 
-	return Plugin::get_instance();
+	return Plugin::getInstance();
 
 }
 
