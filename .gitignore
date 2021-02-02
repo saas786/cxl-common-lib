@@ -9,6 +9,6 @@ dist/
 node_modules/
 vendor/
 .idea
-resources/lang
+public/lang
 cxl-common-lib
 cxl-common-lib.zip

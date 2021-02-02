@@ -9,7 +9,7 @@
  * Description:       Functionality, integrations, features.
  * Author:            Leho Kraav
  * Author URI:        https://cxl.com
- * Version:           2021.01.01
+ * Version:           2021.02.03
  *
  * Requires at least: 5.6
  * Requires PHP:      7.4

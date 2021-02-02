@@ -20,7 +20,7 @@ let exportPath = 'cxl-common-lib';
 let files = ['changelog.md', 'plugin.php', 'readme.md', 'license.md'];
 
 // Folders to include.
-let folders = ['src', 'vendor'];
+let folders = ['src', 'vendor', 'public'];
 
 // Delete the previous export to start clean.
 rimraf.sync(exportPath);
