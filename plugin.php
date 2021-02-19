@@ -53,3 +53,15 @@ function cxl_common_lib() {
 }
 
 add_action( 'plugins_loaded', 'cxl_common_lib', 0 );
+
+/**
+ * When WP has loaded all plugins, trigger the `cxl_common_lib_loaded` hook.
+ *
+ * This ensures `cxl_common_lib_loaded` is called only after all other plugins
+ * are loaded, to avoid issues caused by plugin directory naming changing
+ * the load order.
+ *
+ * @see https://github.com/woocommerce/woocommerce/issues/21524
+ * @since 2021.02.19
+ */
+add_action( 'plugins_loaded', static fn(): ?string => do_action( 'cxl_common_lib_loaded' ), -1 );
