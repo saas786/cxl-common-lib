@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "318feb08148e03d023daa810821f382c",
+    "content-hash": "1ed879b475c86db9707a8970442c38d4",
     "packages": [
         {
             "name": "justintadlock/hybrid-core",
-            "version": "dev-syed/tweak/shared/lib",
+            "version": "6.0.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/conversionxl/hybrid-core.git",
-                "reference": "2fd4ec0"
+                "url": "https://github.com/themehybrid/hybrid-core.git",
+                "reference": "9a5a4a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/conversionxl/hybrid-core/zipball/2fd4ec0",
-                "reference": "2fd4ec0",
+                "url": "https://api.github.com/repos/themehybrid/hybrid-core/zipball/9a5a4a2",
+                "reference": "9a5a4a2",
                 "shasum": ""
             },
             "require": {
@@ -52,9 +52,9 @@
             "support": {
                 "issues": "https://github.com/justintadlock/hybrid-core/issues",
                 "forum": "https://themehybrid.com/board/forums/hybrid-core",
-                "source": "https://github.com/conversionxl/hybrid-core/tree/syed/tweak/shared/lib"
+                "source": "https://github.com/themehybrid/hybrid-core/tree/6.0"
             },
-            "time": "2021-01-12T11:09:14+00:00"
+            "time": "2021-03-10T10:36:39+00:00"
         },
         {
             "name": "justintadlock/hybrid-support",
@@ -2304,10 +2304,10 @@
     ],
     "aliases": [
         {
+            "package": "justintadlock/hybrid-core",
+            "version": "6.0.9999999.9999999-dev",
             "alias": "5.0.0",
-            "alias_normalized": "5.0.0.0",
-            "version": "dev-syed/tweak/shared/lib",
-            "package": "justintadlock/hybrid-core"
+            "alias_normalized": "5.0.0.0"
         }
     ],
     "minimum-stability": "dev",
@@ -2322,5 +2322,5 @@
         "php": ">=7.4"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
