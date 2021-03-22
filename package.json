@@ -12,7 +12,8 @@
     "export": "npx mix --mix-config=webpack.mix.export.js --production",
     "build": "npm run i18n && npm run export",
     "pre-build": "composer update --prefer-dist --no-dev -o",
-    "post-build": "composer update"
+    "post-build": "composer update",
+    "postinstall": "husky install && shx rm -rf .git/hooks && shx ln -s ../.husky .git/hooks"
   },
   "devDependencies": {
     "@10up/eslint-config": "^2.1.1",
@@ -38,6 +39,7 @@
     "postcss": "^8.1.14",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
+    "shx": "^0.3.3",
     "stylelint": "^13.8.0"
   }
 }
