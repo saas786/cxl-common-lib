@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f578d5fe26f3cf347fe0b7b48126577b",
+    "content-hash": "f29ce6303537833aeebc22e87013a466",
     "packages": [
         {
             "name": "justintadlock/hybrid-core",
@@ -105,21 +105,22 @@
         },
         {
             "name": "themehybrid/hybrid-contracts",
-            "version": "dev-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/themehybrid/hybrid-contracts.git",
-                "reference": "96aee2c"
+                "reference": "e171ea4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/themehybrid/hybrid-contracts/zipball/96aee2c",
-                "reference": "96aee2c",
+                "url": "https://api.github.com/repos/themehybrid/hybrid-contracts/zipball/e171ea4",
+                "reference": "e171ea4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -145,27 +146,28 @@
             "support": {
                 "issues": "https://github.com/themehybrid/hybrid-contracts/issues",
                 "forum": "https://themehybrid.com/board/forums/hybrid-core",
-                "source": "https://github.com/themehybrid/hybrid-contracts/tree/dev"
+                "source": "https://github.com/themehybrid/hybrid-contracts/tree/master"
             },
-            "time": "2021-03-19T11:27:00+00:00"
+            "time": "2021-03-21T13:30:40+00:00"
         },
         {
             "name": "themehybrid/hybrid-tools",
-            "version": "dev-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/themehybrid/hybrid-tools.git",
-                "reference": "2fb7568"
+                "reference": "0154820"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/themehybrid/hybrid-tools/zipball/2fb7568",
-                "reference": "2fb7568",
+                "url": "https://api.github.com/repos/themehybrid/hybrid-tools/zipball/0154820",
+                "reference": "0154820",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -191,9 +193,9 @@
             "support": {
                 "issues": "https://github.com/themehybrid/hybrid-tools/issues",
                 "forum": "https://themehybrid.com/board/forums/hybrid-core",
-                "source": "https://github.com/themehybrid/hybrid-tools/tree/dev"
+                "source": "https://github.com/themehybrid/hybrid-tools/tree/master"
             },
-            "time": "2021-03-19T11:15:18+00:00"
+            "time": "2021-03-21T13:30:53+00:00"
         }
     ],
     "packages-dev": [
@@ -2542,13 +2544,13 @@
         },
         {
             "package": "themehybrid/hybrid-contracts",
-            "version": "dev-dev",
+            "version": "9999999-dev",
             "alias": "1.0.0",
             "alias_normalized": "1.0.0.0"
         },
         {
             "package": "themehybrid/hybrid-tools",
-            "version": "dev-dev",
+            "version": "9999999-dev",
             "alias": "1.0.0",
             "alias_normalized": "1.0.0.0"
         }
