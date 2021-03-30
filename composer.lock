@@ -4,25 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85b53674f98d8dc3033e5c7ae17d24d5",
+    "content-hash": "2603a56376b62c4d1f9071293d3b6b78",
     "packages": [
         {
             "name": "justintadlock/hybrid-core",
-            "version": "6.0.x-dev",
+            "version": "dev-dev-6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/themehybrid/hybrid-core.git",
-                "reference": "f679e95"
+                "reference": "35931bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/themehybrid/hybrid-core/zipball/f679e95",
-                "reference": "f679e95",
+                "url": "https://api.github.com/repos/themehybrid/hybrid-core/zipball/35931bb",
+                "reference": "35931bb",
                 "shasum": ""
             },
             "require": {
-                "justintadlock/hybrid-support": "dev-main#5d07b82",
-                "php": ">=5.6"
+                "php": ">=5.6",
+                "themehybrid/hybrid-contracts": "^1.0.0",
+                "themehybrid/hybrid-tools": "^1.0.0"
             },
             "type": "library",
             "autoload": {
@@ -50,58 +51,11 @@
                 "wordpress"
             ],
             "support": {
-                "issues": "https://github.com/justintadlock/hybrid-core/issues",
+                "issues": "https://github.com/themehybrid/hybrid-core/issues",
                 "forum": "https://themehybrid.com/board/forums/hybrid-core",
-                "source": "https://github.com/themehybrid/hybrid-core/tree/6.0"
+                "source": "https://github.com/themehybrid/hybrid-core/tree/dev-6.0"
             },
-            "time": "2021-03-10T10:36:39+00:00"
-        },
-        {
-            "name": "justintadlock/hybrid-support",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/themehybrid/hybrid-support.git",
-                "reference": "5d07b82"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/themehybrid/hybrid-support/zipball/5d07b82",
-                "reference": "5d07b82",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Hybrid\\Support\\": "src/"
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Justin Tadlock",
-                    "email": "justintadlock@gmail.com",
-                    "homepage": "https://themehybrid.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Additional theme specific features for the Hybrid Core framework.",
-            "homepage": "https://github.com/justintadlock/hybrid-support",
-            "keywords": [
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/justintadlock/hybrid-support/issues",
-                "forum": "https://themehybrid.com/board/topics",
-                "source": "https://github.com/themehybrid/hybrid-support/tree/main"
-            },
-            "time": "2021-01-12T11:06:15+00:00"
+            "time": "2021-03-30T07:58:08+00:00"
         },
         {
             "name": "themehybrid/hybrid-contracts",
@@ -2540,7 +2494,7 @@
     "aliases": [
         {
             "package": "justintadlock/hybrid-core",
-            "version": "6.0.9999999.9999999-dev",
+            "version": "dev-dev-6.0",
             "alias": "5.2.0",
             "alias_normalized": "5.2.0.0"
         },
@@ -2560,7 +2514,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "justintadlock/hybrid-core": 20,
-        "justintadlock/hybrid-support": 20,
         "themehybrid/hybrid-contracts": 20,
         "themehybrid/hybrid-tools": 20,
         "cxl/phpcs-ruleset": 20
