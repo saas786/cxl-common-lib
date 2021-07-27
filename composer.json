@@ -15,7 +15,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/saas786/hybrid-core"
+            "url": "https://github.com/themehybrid/hybrid-core"
         },
         {
             "type": "vcs",
@@ -28,13 +28,13 @@
     ],
     "require": {
         "php" : ">=7.4",
-        "justintadlock/hybrid-core": "dev-dev-6.0#c75b5a8 as 5.2.0",
-        "themehybrid/hybrid-contracts": "dev-master#e171ea4 as 1.0.0",
+        "themehybrid/hybrid-core": "dev-master#fb6a576 as 5.2.0",
+        "themehybrid/hybrid-contracts": "dev-master#9432493 as 1.0.0",
         "themehybrid/hybrid-tools": "dev-master#0154820 as 1.0.0"
     },
     "require-dev": {
         "cxl/phpcs-ruleset": "dev-master",
-        "vimeo/psalm": "^4.7.0"
+        "vimeo/psalm": "^4.8.1"
     },
     "autoload": {
         "psr-4": {

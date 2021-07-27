@@ -10,6 +10,7 @@
 >
     <projectFiles>
         <directory name="src"/>
+        <file name="plugin.php"/>
         <ignoreFiles>
             <directory name="vendor"/>
         </ignoreFiles>
