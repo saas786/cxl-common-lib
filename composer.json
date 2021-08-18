@@ -4,37 +4,25 @@
     "description": "Common Lib for CXL Projects, provides tools such as Hybrid Core framework etc.",
     "authors": [
         {
-            "name": "Leho Kraav",
-            "email": "leho@conversionxl.com"
+            "name": "CXL",
+            "email": "dev@conversionxl.com"
         }
     ],
     "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/conversionxl/phpcs-ruleset"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/themehybrid/hybrid-core"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/themehybrid/hybrid-contracts"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/themehybrid/hybrid-tools"
         }
     ],
     "require": {
         "php" : ">=7.4",
-        "themehybrid/hybrid-core": "dev-master#fb6a576 as 5.2.0",
-        "themehybrid/hybrid-contracts": "dev-master#9432493 as 1.0.0",
-        "themehybrid/hybrid-tools": "dev-master#0154820 as 1.0.0"
+        "themehybrid/hybrid-core": "^6.0",
+        "themehybrid/hybrid-contracts": "^1.0",
+        "themehybrid/hybrid-tools": "^1.0"
     },
     "require-dev": {
         "cxl/phpcs-ruleset": "dev-master",
-        "vimeo/psalm": "^4.8.1"
+        "vimeo/psalm": "^4.9.3"
     },
     "autoload": {
         "psr-4": {
