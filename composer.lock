@@ -4,32 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6a35ee9f2dc60a70e8b0ca85df7e376",
+    "content-hash": "c509c43b53984e11ed0a7afaf6756b91",
     "packages": [
         {
             "name": "themehybrid/hybrid-contracts",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/themehybrid/hybrid-contracts.git",
-                "reference": "9432493"
+                "reference": "71cc43a0f00052449b62041ee308a5db9b3e4079"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/themehybrid/hybrid-contracts/zipball/9432493",
-                "reference": "9432493",
+                "url": "https://api.github.com/repos/themehybrid/hybrid-contracts/zipball/71cc43a0f00052449b62041ee308a5db9b3e4079",
+                "reference": "71cc43a0f00052449b62041ee308a5db9b3e4079",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Hybrid\\Contracts\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -47,31 +47,30 @@
                 "wordpress"
             ],
             "support": {
-                "issues": "https://github.com/themehybrid/hybrid-contracts/issues",
                 "forum": "https://themehybrid.com/board/forums/hybrid-core",
-                "source": "https://github.com/themehybrid/hybrid-contracts/tree/master"
+                "issues": "https://github.com/themehybrid/hybrid-contracts/issues",
+                "source": "https://github.com/themehybrid/hybrid-contracts/tree/1.0.0"
             },
-            "time": "2021-06-23T05:26:42+00:00"
+            "time": "2021-07-31T19:23:47+00:00"
         },
         {
             "name": "themehybrid/hybrid-core",
-            "version": "dev-master",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/themehybrid/hybrid-core.git",
-                "reference": "fb6a576"
+                "reference": "668b404121117ab9b348fbe17d8e77c98c9a6c70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/themehybrid/hybrid-core/zipball/fb6a576",
-                "reference": "fb6a576",
+                "url": "https://api.github.com/repos/themehybrid/hybrid-core/zipball/668b404121117ab9b348fbe17d8e77c98c9a6c70",
+                "reference": "668b404121117ab9b348fbe17d8e77c98c9a6c70",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0",
-                "themehybrid/hybrid-contracts": "dev-master"
+                "themehybrid/hybrid-contracts": "^1.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -81,6 +80,7 @@
                     "src/functions-helpers.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -98,36 +98,39 @@
                 "wordpress"
             ],
             "support": {
-                "issues": "https://github.com/themehybrid/hybrid-core/issues",
                 "forum": "https://themehybrid.com/board/forums/hybrid-core",
-                "source": "https://github.com/themehybrid/hybrid-core/tree/master"
+                "issues": "https://github.com/themehybrid/hybrid-core/issues",
+                "source": "https://github.com/themehybrid/hybrid-core/tree/6.0.0"
             },
-            "time": "2021-07-06T14:58:20+00:00"
+            "time": "2021-08-01T18:21:12+00:00"
         },
         {
             "name": "themehybrid/hybrid-tools",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/themehybrid/hybrid-tools.git",
-                "reference": "0154820"
+                "reference": "821c2260bb6cf5c02041aa69e01e1ece828fa612"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/themehybrid/hybrid-tools/zipball/0154820",
-                "reference": "0154820",
+                "url": "https://api.github.com/repos/themehybrid/hybrid-tools/zipball/821c2260bb6cf5c02041aa69e01e1ece828fa612",
+                "reference": "821c2260bb6cf5c02041aa69e01e1ece828fa612",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Hybrid\\Tools\\": "src/"
-                }
+                },
+                "files": [
+                    "src/functions-helpers.php"
+                ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -139,17 +142,17 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Add-on tools for the Hybrid Core framework.",
+            "description": "Helper tools and functions.",
             "homepage": "https://github.com/themehybrid/hybrid-tools",
             "keywords": [
                 "wordpress"
             ],
             "support": {
-                "issues": "https://github.com/themehybrid/hybrid-tools/issues",
                 "forum": "https://themehybrid.com/board/forums/hybrid-core",
-                "source": "https://github.com/themehybrid/hybrid-tools/tree/master"
+                "issues": "https://github.com/themehybrid/hybrid-tools/issues",
+                "source": "https://github.com/themehybrid/hybrid-tools/tree/1.0.0"
             },
-            "time": "2021-03-21T13:30:53+00:00"
+            "time": "2021-08-01T03:23:16+00:00"
         }
     ],
     "packages-dev": [
@@ -475,21 +478,21 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "964adcdd3a28bf9ed5d9ac6450064e0d71ed7496"
+                "reference": "84674dd3a7575ba617f5a76d7e9e29a7d3891339"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/964adcdd3a28bf9ed5d9ac6450064e0d71ed7496",
-                "reference": "964adcdd3a28bf9ed5d9ac6450064e0d71ed7496",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/84674dd3a7575ba617f5a76d7e9e29a7d3891339",
+                "reference": "84674dd3a7575ba617f5a76d7e9e29a7d3891339",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.3.2 || ^7.0 || ^8.0",
-                "psr/log": "^1.0"
+                "psr/log": "^1 || ^2 || ^3"
             },
             "require-dev": {
                 "phpstan/phpstan": "^0.12.55",
@@ -519,7 +522,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/xdebug-handler/issues",
-                "source": "https://github.com/composer/xdebug-handler/tree/2.0.1"
+                "source": "https://github.com/composer/xdebug-handler/tree/2.0.2"
             },
             "funding": [
                 {
@@ -535,7 +538,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-05T19:37:51+00:00"
+            "time": "2021-07-31T17:03:58+00:00"
         },
         {
             "name": "cxl/phpcs-ruleset",
@@ -1489,16 +1492,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.3.4",
+            "version": "v5.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "ebd610dacd40d75b6a12bf64b5ccd494fc7d6ab1"
+                "reference": "51b71afd6d2dc8f5063199357b9880cea8d8bfe2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/ebd610dacd40d75b6a12bf64b5ccd494fc7d6ab1",
-                "reference": "ebd610dacd40d75b6a12bf64b5ccd494fc7d6ab1",
+                "url": "https://api.github.com/repos/symfony/console/zipball/51b71afd6d2dc8f5063199357b9880cea8d8bfe2",
+                "reference": "51b71afd6d2dc8f5063199357b9880cea8d8bfe2",
                 "shasum": ""
             },
             "require": {
@@ -1568,7 +1571,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v5.3.4"
+                "source": "https://github.com/symfony/console/tree/v5.3.6"
             },
             "funding": [
                 {
@@ -1584,7 +1587,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-26T16:33:26+00:00"
+            "time": "2021-07-27T19:10:22+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -1734,16 +1737,16 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.23.0",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "24b72c6baa32c746a4d0840147c9715e42bb68ab"
+                "reference": "16880ba9c5ebe3642d1995ab866db29270b36535"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/24b72c6baa32c746a4d0840147c9715e42bb68ab",
-                "reference": "24b72c6baa32c746a4d0840147c9715e42bb68ab",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/16880ba9c5ebe3642d1995ab866db29270b36535",
+                "reference": "16880ba9c5ebe3642d1995ab866db29270b36535",
                 "shasum": ""
             },
             "require": {
@@ -1795,7 +1798,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.23.1"
             },
             "funding": [
                 {
@@ -1811,7 +1814,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-27T09:17:38+00:00"
+            "time": "2021-05-27T12:26:48+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
@@ -1899,16 +1902,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.23.0",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "2df51500adbaebdc4c38dea4c89a2e131c45c8a1"
+                "reference": "9174a3d80210dca8daa7f31fec659150bbeabfc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2df51500adbaebdc4c38dea4c89a2e131c45c8a1",
-                "reference": "2df51500adbaebdc4c38dea4c89a2e131c45c8a1",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9174a3d80210dca8daa7f31fec659150bbeabfc6",
+                "reference": "9174a3d80210dca8daa7f31fec659150bbeabfc6",
                 "shasum": ""
             },
             "require": {
@@ -1959,7 +1962,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.23.1"
             },
             "funding": [
                 {
@@ -1975,7 +1978,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-27T09:27:20+00:00"
+            "time": "2021-05-27T12:26:48+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
@@ -2058,16 +2061,16 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.23.0",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0"
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/eca0bf41ed421bed1b57c4958bab16aa86b757d0",
-                "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/1100343ed1a92e3a38f9ae122fc0eb21602547be",
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be",
                 "shasum": ""
             },
             "require": {
@@ -2121,7 +2124,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.1"
             },
             "funding": [
                 {
@@ -2137,7 +2140,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2021-07-28T13:41:28+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -2303,16 +2306,16 @@
         },
         {
             "name": "vimeo/psalm",
-            "version": "4.8.1",
+            "version": "4.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "f73f2299dbc59a3e6c4d66cff4605176e728ee69"
+                "reference": "4c262932602b9bbab5020863d1eb22d49de0dbf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/f73f2299dbc59a3e6c4d66cff4605176e728ee69",
-                "reference": "f73f2299dbc59a3e6c4d66cff4605176e728ee69",
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/4c262932602b9bbab5020863d1eb22d49de0dbf4",
+                "reference": "4c262932602b9bbab5020863d1eb22d49de0dbf4",
                 "shasum": ""
             },
             "require": {
@@ -2331,7 +2334,7 @@
                 "felixfbecker/advanced-json-rpc": "^3.0.3",
                 "felixfbecker/language-server-protocol": "^1.5",
                 "netresearch/jsonmapper": "^1.0 || ^2.0 || ^3.0 || ^4.0",
-                "nikic/php-parser": "^4.10.5",
+                "nikic/php-parser": "^4.12",
                 "openlss/lib-array2xml": "^1.0",
                 "php": "^7.1|^8",
                 "sebastian/diff": "^3.0 || ^4.0",
@@ -2354,7 +2357,6 @@
                 "slevomat/coding-standard": "^7.0",
                 "squizlabs/php_codesniffer": "^3.5",
                 "symfony/process": "^4.3 || ^5.0",
-                "weirdan/phpunit-appveyor-reporter": "^1.0.0",
                 "weirdan/prophecy-shim": "^1.0 || ^2.0"
             },
             "suggest": {
@@ -2402,9 +2404,9 @@
             ],
             "support": {
                 "issues": "https://github.com/vimeo/psalm/issues",
-                "source": "https://github.com/vimeo/psalm/tree/4.8.1"
+                "source": "https://github.com/vimeo/psalm/tree/4.9.3"
             },
-            "time": "2021-06-20T23:03:20+00:00"
+            "time": "2021-08-14T16:19:38+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -2566,31 +2568,9 @@
             "time": "2020-05-13T23:57:56+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "themehybrid/hybrid-contracts",
-            "version": "9999999-dev",
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0"
-        },
-        {
-            "package": "themehybrid/hybrid-core",
-            "version": "9999999-dev",
-            "alias": "5.2.0",
-            "alias_normalized": "5.2.0.0"
-        },
-        {
-            "package": "themehybrid/hybrid-tools",
-            "version": "9999999-dev",
-            "alias": "1.0.0",
-            "alias_normalized": "1.0.0.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "themehybrid/hybrid-core": 20,
-        "themehybrid/hybrid-contracts": 20,
-        "themehybrid/hybrid-tools": 20,
         "cxl/phpcs-ruleset": 20
     },
     "prefer-stable": true,
@@ -2599,5 +2579,5 @@
         "php": ">=7.4"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

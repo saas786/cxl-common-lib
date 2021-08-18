@@ -1,19 +1,17 @@
 {
-  "name": "cxl-common-lib-plugin",
-  "version": "2021.01.01",
-  "description": "",
+  "name": "cxl-common-lib",
+  "version": "2021.08.18",
+  "description": "CXL Common Lib plugin, which hosts shared libraries, like Hybrid Core.",
   "private": true,
   "author": "",
   "scripts": {
-    "husky-fix": "node \"./bin-dev/fix-husky.js\"",
     "i18n": "npm run i18n:textdomain && npm run i18n:pot",
     "i18n:textdomain": "npx wpi18n addtextdomain --exclude=vendor,node_modules,bin-dev",
     "i18n:pot": "npx wpi18n makepot --domain-path=/public/lang",
     "export": "npx mix --mix-config=webpack.mix.export.js --production",
     "build": "npm run i18n && npm run export",
     "pre-build": "composer update --prefer-dist --no-dev -o",
-    "post-build": "composer update",
-    "postinstall": "husky install && shx rm -rf .git/hooks && shx ln -s ../.husky .git/hooks"
+    "post-build": "composer update"
   },
   "devDependencies": {
     "@10up/eslint-config": "^2.1.1",
@@ -27,12 +25,12 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsdoc": "^32.3.0",
+    "eslint-plugin-jsdoc": "^36.0.7",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^5.1.3",
+    "husky": "^4.3.8",
     "laravel-mix": "^6.0.6",
     "lint-staged": "^10.5.3",
     "node-wp-i18n": "^1.2.3",
