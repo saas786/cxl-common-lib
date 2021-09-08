@@ -6,10 +6,10 @@
  *
  * Plugin Name:       CXL Common Lib
  * Plugin URI:        https://cxl.com/
- * Description:       Functionality, integrations, features.
+ * Description:       CXL Common functionality, integrations, features.
  * Author:            Leho Kraav
  * Author URI:        https://cxl.com
- * Version:           2021.02.03
+ * Version:           2021.08.18
  *
  * Requires at least: 5.6
  * Requires PHP:      7.4
